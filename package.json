@@ -1,0 +1,30 @@
+{
+  "name": "work",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@material-tailwind/react": "^2.1.4",
+    "axios": "^1.6.5",
+    "formidable": "^3.5.1",
+    "mongodb": "^6.2.0",
+    "mongoose": "^8.0.0",
+    "multer": "^1.4.5-lts.1",
+    "next": "14.0.2",
+    "react": "^18",
+    "react-dom": "^18",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.2",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
+  }
+}
