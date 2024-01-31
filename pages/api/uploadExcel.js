@@ -16,8 +16,6 @@ export default async function handler(req, res) {
   }
 
   try {
-    await db.connectDb();
-
     // Use the Multer middleware to handle file upload
     uploadMiddleware(req, res, async function (err) {
       if (err) {
@@ -56,6 +54,7 @@ export default async function handler(req, res) {
 
       try {
         // Use insertMany for batch insertion
+        await db.connectDb();
         await CodeModel.deleteMany();
         await CodeModel.insertMany(data);
       } catch (insertError) {
